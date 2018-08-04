@@ -2,7 +2,7 @@
 # This script have been created by Jacob Ouellette.
 
 #################################################################
-#							 CONFIGURATION 						#
+#			 CONFIGURATION 				#
 #################################################################
 # Place all folders you want to backup followed by the backup folder name. DON'T put * to select many folders.
 TOBACKUP=(
@@ -24,7 +24,7 @@ PASSWORD=""
 DESTINATOR="destinator@mail.com"
 
 #################################################################
-#				PROCESSING (don't edit this part)				#
+#		PROCESSING (don't edit this part)		#
 #################################################################
 mBody="Backup start time: $(date +%H:%M)"
 for ((i=0; i<${#TOBACKUP[@]}; i++)) do
