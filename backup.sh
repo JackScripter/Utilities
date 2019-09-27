@@ -26,7 +26,7 @@ DESTINATOR="destination@mail.com"
 #		PROCESSING (don't edit this part)		#
 #################################################################
 mBody="Backup start time: $(date +%H:%M)"
-for ((i=0; i<${#TOBACKUP[@]}; i++)) do
+for ((i=0; i<${#TOBACKUP[@]}; i++)); do
 	if [ $(( $i % 2 )) == 0 ];then
 		nameNum=$((i + 1))
 		if [ ! -f $DESTINATION/${TOBACKUP[$nameNum]} ];then mkdir -p $DESTINATION/${TOBACKUP[$nameNum]}; fi # Create destination folder if don't exist.
